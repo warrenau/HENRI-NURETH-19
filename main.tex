@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  This is a sample LaTeX input file for your contribution to
+%  the MC2013 conference. Modified by R.C. Martineau at INL from A.
+%  Sood at LANL, from J. Wagner ORNL who obtained the original class
+%  file by Jim Warsa, LANL, 16 July 2002}
+%
+%  Please use it as a template for your full paper
+%    Accompanying/related file(s) include:
+%       1. Document class/format file: mc2013.cls
+%       2. Sample Postscript Figure:   figure.eps
+%       3. A PDF file showing the desired appearance: template.pdf
+%    Direct questions about these files to: richard.martinea@inl.gov
+%
+%    Notes:
+%      (1) You can use the "dvips" utility to convert .dvi
+%          files to PostScript.  Then, use either Acrobat
+%          Distiller or "ps2pdf" to convert to PDF format.
+%      (2) Different versions of LaTeX have been observed to
+%          shift the page down, causing improper margins.
+%          If this occurs, adjust the "topmargin" value in the
+%          mc2013.cls file to achieve the proper margins.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{anstopical-class/ansconf}
+%
+%  various packages that you may wish to activate for usage
+\usepackage{graphicx}
+\usepackage{tabls}
+\usepackage{multirow}
+%
+% my packages
+\usepackage{amsmath} % math stuff
+\usepackage{amssymb} % more math stuff
+\usepackage{siunitx} % units and stuff
+\sisetup{detect-weight=true, detect-family=true} % makes siunitx follow font formatting like bold, italic, etc.
+\usepackage{cancel} % cancel stuff in eqns
+\usepackage{isotope} % makes isotopes look pretty
+\usepackage{listings} % makes code look pretty
+\usepackage[dvipsnames]{xcolor} % colors
+\usepackage{xspace} % space
+\usepackage{booktabs} % table stuff
+\usepackage{setspace} % more space
+\usepackage{subcaption} % subfigure stuff
+\usepackage{hyperref} % makes refs good
+\usepackage[final]{varioref} % makes refs even gooder
+\usepackage{cleveref} % makes refs gooder
+% adds oxford comma to cleveref
+\newcommand{\creflastconjunction}{, and\nobreakspace}
+\usepackage{lipsum} % lorem ipsum filler
+
+% si units stuff
+\DeclareSIUnit\year{yr}
+\DeclareSIUnit\hour{hr}
+\DeclareSIUnit\amp{A}
+
+%
+% Insert authors' names and short version of title in lines below
+%
+%\authorHead{Authors' names, use et al. if more than 3}
+%\shortTitle{Short version of title as entered by author on web %page}
+
+%\confTitle{19$^{th}$ International Conference on Nuclear Reactor %Thermal Hydraulics (NURETH-19)}
+%\confLocation{Brussels, Belgium, August 29 -- September 3, 2021}
+
+%Header and Page numbers
+
+\usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyhead[L]{\begin{tabular}{ll}
+\multirow{2}{*}{\includegraphics[scale=0.28]{anstopical-class/NURETH-19.png}} & \fontsize{9}{9}\selectfont {\setstretch{0.1}}The 19th International Topical Meeting on Nuclear Reactor Thermal Hydraulics (NURETH-19) Log nr.: 19001 \\
+& \fontsize{9}{9}\selectfont Brussels, Belgium, March 6 - 11, 2022 \\
+\end{tabular}} 
+\fancyfoot[C]{\thepage}% Right footer
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   BEGIN DOCUMENT
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\pagestyle{plain}% Set page style to plain.
+
+\begin{document}
+
+\title{EXPERIMENTS ON THE HELIUM-3 NEGATIVE REACTIVITY INSERTION (HENRI) PROTOTYPE AND FAST OPENING VALVE}
+
+\author{A. Warren}
+\author{A. Camargo}
+\author{G. Mignot}
+\author{W. Marcum}
+\affil{School of Nuclear Science and Engineering \\
+  Oregon State University, Corvallis, OR 97331 \\
+  warrenau@oregonstate.edu; camargoa@oregonstate.edu}
+
+%\author{Double space and list Author C}
+%\affil{
+%  Department of Nuclear Engineering \\
+%  Name of University \\
+%  Address \\
+%  C@name.univ.edu
+%}
+
+\maketitle
+
+\begin{abstract}
+The restart of the TRansient REactor Test (TREAT) facility combined with the Resumption of Transient Testing Program (RTTP) has generated an increased interest in mimicking Reactivity Initiated  Accident (RIA) events conditions for Light Water Reactor within TREAT itself. One of the engineering challenges for this task is to increase the energy deposition rate on the tested fuel element by shortening the width of the  power  pulse  from  its  current  89  milliseconds down  to  40 milliseconds. To overcome  this  challenge, Idaho National Laboratory (INL) proposed a design, consisting of rapidly pressurizing a specially designed hollow control rod with Helium-3. The insertion of negative reactivity in the form of Helium-3, a strong neutron  absorber,  must  be  well  predicted and repeatable.  In  this  prospect,  an  out-of-pile  prototype,  the Helium  Negative  Reactivity  Insertion  (HENRI) facility, has been designed  and  built  at  Oregon  State University (OSU) to  assess  the  feasibility,  the  repeatability, and  the control of such process. Tests performed with rupture disks provided characterization of the physics of the system, however the system requires a more repeatable and precise method of gas injection. To meet this need, a valve has been designed and tested using a pneumatic piston which can open rapidly and repeatedly for precise control of the system. These tests characterized the valve performance and provided confidence in the operation of the system, both of which are critical to understand and control the Helium-3 density evolution in the core.
+
+\raggedleft
+\textbf{KEYWORDS}\\
+TREAT, Helium-3, Control Rod, Pulse, Valve
+\end{abstract}
+
+
+%\raggedright
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% probably similar to previous HENRI NURETH intro
+% motivations for TREAT RIA testing / HENRI project
+% discuss the need for the fast opening piston valve -- maybe needs a different section?
+\input{intro/intro}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% discuss experimental set up, differences between this set up and the previous rupture disk set up
+% discuss differences in piston valve iterations and why changes were made
+% pictures and stuff
+% maybe test matrix?
+\input{experiment/experiment}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DESIGN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% discuss design requirements of fast opening valve -- why piston valve; why does burst disk not work
+% discuss design iterations of piston valve -- first mount / metal-metal seal, then improved mount, and o-ring on plug
+\input{design/design}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% discuss / compare results to previous rupture disk stuff and previous iteration of piston valve
+\input{results/results}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONCLUSION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{conclusion/conclusion}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%% ACKNOWLEDGMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{acknowledgments/acknowledgments}
+
+
+
+
+\setlength{\baselineskip}{12pt}
+
+\bibliographystyle{anstopical-class/nureth18new}
+\bibliography{bibliography/references}
+
+\end{document}

@@ -40,7 +40,7 @@
 \usepackage{cancel} % cancel stuff in eqns
 \usepackage{isotope} % makes isotopes look pretty
 \usepackage{listings} % makes code look pretty
-\usepackage[dvipsnames]{xcolor} % colors
+\usepackage[dvipsnames,table]{xcolor} % colors
 \usepackage{xspace} % space
 \usepackage{booktabs} % table stuff
 \usepackage{setspace} % more space
@@ -57,6 +57,10 @@
 \DeclareSIUnit\hour{hr}
 \DeclareSIUnit\amp{A}
 
+% check and x marks
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\textcolor{Green}{\ding{51}}}%
+\newcommand{\xmark}{\textcolor{Red}{\ding{55}}}%
 %
 % Insert authors' names and short version of title in lines below
 %

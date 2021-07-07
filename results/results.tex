@@ -62,19 +62,19 @@ The rupture disks were used in the HENRI system to determine if the system was c
 It is vital that the valve selected for the HENRI system will provide a repeatable and predictable pressurization of the cartridge during a TREAT transient. \Cref{fig:piston repeatability} shows results from two tests at the same initial pressure and multiple tests at different initial pressures, normalized by initial pressure. The first plot, \Cref{fig:piston 2 test}, demonstrates the piston valve will provide a repeatable pressurization for each test in TREAT. The second plot, \Cref{fig:norm}, provides data to predict the pressurization speed and profile for the HENRI cartridge over a range of initial pressures.
 
 
-\begin{figure}[tb]
+\begin{figure}[bt]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
-        %\includegraphics[width=0.9\textwidth]{}
+        \includegraphics[width=0.9\textwidth]{results/plots/718psi_MTM_annu_failed_test.png}
         \caption{Comparison of two piston valve tests at an initial pressure of \SI{6.9}{\mega\pascal} (1000 psi).}
         \label{fig:piston 2 test}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
-        %\includegraphics[width=0.9\textwidth]{}
-        \caption{Piston valve test results, at position TS3, normalized by initial driver tank pressure for a range of initial driver tank pressures.}
+        \includegraphics[width=0.9\textwidth]{results/plots/Normalized_RX1_MtM_annular.png}
+        \caption{First design piston valve test results normalized by initial driver tank pressure for a range of initial driver tank pressures.}
         \label{fig:norm}
     \end{subfigure}
     \caption{Comparison of results for piston valve to demonstrate repeatability at one initial pressure and predictability at varying initial pressures.}
@@ -155,7 +155,7 @@ Since a new piston mount and plug have been designed, the new setup needs to be 
 %\subsection{Improved Piston Valve Repeatability} \label{ss:new repeatability}
 The repeatability is tested in the same manner as the first piston valve design. The piston valve is tested at the same initial pressure to determine the repeatability and consistency, then the valve is tested at varying initial pressures to provide data to predict the valve's operation and pressure evolution over a range of pressures. \Cref{fig:new piston 2 test} shows two tests at an initial pressure of \SI{6.9}{\mega\pascal} (1000 psi). The two tests overlap each other well and demonstrate the piston valve can produce the same pressurization in the HENRI cartridge for multiple tests. \Cref{fig:new norm} presents tests over a range of initial pressures, normalized by the initial pressure. The highest three initial pressures provide very similar results, that also match well with the rupture disk tests. However, \SI{2.5}{\mega\pascal} (360 psi) and lower deviate and pressurize slower, with less oscillation. The behavior of the valve and HENRI cartridge at low initial pressure is useful to know so TREAT has more flexibility in transient capability. The improved piston valve design also can seal at much lower pressures than the metal only plug design, which further increases the capability of the system.
 
-\begin{figure}[bt]
+\begin{figure}[tb]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
@@ -166,7 +166,7 @@ The repeatability is tested in the same manner as the first piston valve design.
     \hfill
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{results/plots/norm_FFKM.png}
+        \includegraphics[width=0.9\textwidth]{results/plots/Normalized_TS3_oring.png}
         \caption{Improved piston valve test results, at position TS3, normalized by initial driver tank pressure for a range of initial driver tank pressures.}
         \label{fig:new norm}
     \end{subfigure}

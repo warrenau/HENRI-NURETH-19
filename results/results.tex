@@ -1,14 +1,9 @@
 \section{Results and Discussion} \label{s:results}
 This section will present the results of the work and discuss their significance. The piston valve is first compared to the previous results using the rupture disks to ensure the valve works as intended and provides the desired pressurization. Then, the piston valve is compared to itself to determine the valve's repeatability and predictability. The valve is then tested for re-usability and durability.
 
-\subsection{First Piston Valve Design}
-% subsection about piston v rupture disk
-%\subsection{Piston Valve Compared to Rupture Disk} \label{s:disk v piston}
-The rupture disks were used in the HENRI system to determine if the system was capable of pressurizing to \SI{1724}{\kilo\pascal} (\SI{250}{psi}) in the desired time frame of \SI{5}{\milli\second}\cite{HeNURETH}. One of the goals of the piston valve is to open quickly enough to maintain as close to rupture disk physics as possible. 
-%Computational fluid dynamics (CFD) simulations were validated using these experiments \cite{CFDNureth,HENRIATH}[MIGHT NEED DIFF REF HERE].
-\Cref{fig:piston v disk} compares the results of a rupture disk test and a piston valve test, both with initial driver tank pressure of \SI{6.9}{\mega\pascal} (\SI{1000}{psia}) and intermediate tube inner diameter of \SI{2.54}{\centi\meter} (\SI{1}{inch}). The piston valve demonstrates that is able to reach the desired pressure of \SI{1.72}{\mega\pascal} (250 psi) in less than \SI{5}{\milli\second}. The piston valve opens quickly enough to replicate the pressure evolution observed in the rupture disks and performs well enough to move on with testing.
+\subsection{Rupture Disk Results}
 
-\begin{figure}[tb]
+\begin{figure}[bt]
     \vspace{16pt}
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
@@ -30,8 +25,13 @@ The rupture disks were used in the HENRI system to determine if the system was c
     \vspace{16pt}
 \end{figure}
 
+The pressure evolution for the HENRI prototype using rupture disks is presented in \Cref{fig:disk}. The cylindrical test section has been selected for the final HENRI design, however, testing was performed with an annular test section to determine if the geometry could meet the pressurization requirements, while reducing the amount of helium-3 required to fill the volume. The annular geometry was decided against due to its complexity and reduced pressurization speed. \Cref{fig:ann disk} shows the pressure evolution for the annular geometry using a rupture disk, which is smoother, but slower than the same test performed with the cylindrical geometry, seen in \Cref{fig:cyl disk}.
 
-\begin{figure}[tb]
+\subsection{First Piston Valve Design}
+% subsection about piston v rupture disk
+%\subsection{Piston Valve Compared to Rupture Disk} \label{s:disk v piston}
+
+\begin{figure}[bt]
     \vspace{16pt}
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
@@ -54,15 +54,25 @@ The rupture disks were used in the HENRI system to determine if the system was c
 \end{figure}
 
 
+The rupture disks were used in the HENRI system to determine if the system was capable of pressurizing to \SI{1724}{\kilo\pascal} (\SI{250}{psi}) in the desired time frame of \SI{5}{\milli\second}\cite{HeNURETH}. One of the goals of the piston valve is to open quickly enough to maintain as close to rupture disk physics as possible. 
+%Computational fluid dynamics (CFD) simulations were validated using these experiments \cite{CFDNureth,HENRIATH}[MIGHT NEED DIFF REF HERE].
+\Cref{fig:piston v disk} compares the results of a rupture disk test and a piston valve test, both with initial driver tank pressure of \SI{6.9}{\mega\pascal} (\SI{1000}{psia}) and intermediate tube inner diameter of \SI{2.54}{\centi\meter} (\SI{1}{inch}). The piston valve demonstrates that is able to reach the desired pressure of \SI{1.72}{\mega\pascal} (250 psi) in less than \SI{5}{\milli\second}. The piston valve opens quickly enough to replicate the pressure evolution observed in the rupture disks and performs well enough to move on with testing.
+
+
+
+
+
+
+
 % first piston valve design
 % the metal to metal seal did not last long -- durability issues, wear on the sealing surface, even with fancy materials; there was a small leak from the driver tank to the test section before the valve was fully open;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % subsection about piston valve repeatability
 %\subsection{Piston Valve Repeatability} \label{ss:repeatability}
-It is vital that the valve selected for the HENRI system will provide a repeatable and predictable pressurization of the cartridge during a TREAT transient. \Cref{fig:piston repeatability} shows results from two tests at the same initial pressure and multiple tests at different initial pressures, normalized by initial pressure. The first plot, \Cref{fig:piston 2 test}, demonstrates the piston valve will provide a repeatable pressurization for each test in TREAT. The second plot, \Cref{fig:norm}, provides data to predict the pressurization speed and profile for the HENRI cartridge over a range of initial pressures.
 
 
 \begin{figure}[bt]
+    \vspace{16pt}
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
@@ -79,12 +89,16 @@ It is vital that the valve selected for the HENRI system will provide a repeatab
     \end{subfigure}
     \caption{Comparison of results for piston valve to demonstrate repeatability at one initial pressure and predictability at varying initial pressures.}
     \label{fig:piston repeatability}
+    \vspace{16pt}
 \end{figure}
+
+
+It is vital that the valve selected for the HENRI system will provide a repeatable and predictable pressurization of the cartridge during a TREAT transient. \Cref{fig:piston repeatability} shows results from two tests at the same initial pressure and multiple tests at different initial pressures, normalized by initial pressure. The first plot, \Cref{fig:piston 2 test}, demonstrates the piston valve will provide a repeatable pressurization for each test in TREAT. The second plot, \Cref{fig:norm}, provides data to predict the pressurization speed and profile for the HENRI cartridge over a range of initial pressures.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % subsection about seal durability testing on the piston valve
 %\subsection{Piston Valve Re-usability} \label{ss:reusability}
-The re-usability of the piston valve was tested by cycling the piston 500 times, then comparing the sealing capability to before the cycles. After 500 cycles, the piston valve would not hold a seal, even with over \SI{6.9}{\mega\pascal} (1000 psi) in the bottom chamber of the piston and in the driver tank. The valve needs to be able to be re-used without being replaced or maintained often, which is one of the reasons the rupture disks do not work. The metal plug was observed to have significant wear after the cycling tests, seen in \Cref{fig:plug wear}, which was asymmetrical. The used stainless steel plug, bottom left, has extreme asymmetrical wear, which meant that the plug could not be used to seal at any pressure. The wear on the aluminum plug was also asymmetrical, however the softer metal was worn more easily and the plug has a more defined ring around its circumference. The asymmetrical wear was attributed to the three legged piston mount that allowed the piston to move slightly in one direction when the valve closed. A new mount and a new plug design that does not wear as much, or can still seal after being worn, would solve this problem.
 
 \begin{figure}[tb]
     \vspace{16pt}
@@ -95,12 +109,16 @@ The re-usability of the piston valve was tested by cycling the piston 500 times,
     \vspace{16pt}
 \end{figure}
 
+The re-usability of the piston valve was tested by cycling the piston 500 times, then comparing the sealing capability to before the cycles. After 500 cycles, the piston valve would not hold a seal, even with over \SI{6.9}{\mega\pascal} (1000 psi) in the bottom chamber of the piston and in the driver tank. The valve needs to be able to be re-used without being replaced or maintained often, which is one of the reasons the rupture disks do not work. The metal plug was observed to have significant wear after the cycling tests, seen in \Cref{fig:plug wear}, which was asymmetrical. The used stainless steel plug, bottom left, has extreme asymmetrical wear, which meant that the plug could not be used to seal at any pressure. The wear on the aluminum plug was also asymmetrical, however the softer metal was worn more easily and the plug has a more defined ring around its circumference. The asymmetrical wear was attributed to the three legged piston mount that allowed the piston to move slightly in one direction when the valve closed. A new mount and a new plug design that does not wear as much, or can still seal after being worn, would solve this problem.
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % subsection about new piston valve design
 \subsection{Piston Valve Design Improvements} \label{ss:new valve}
-The piston mount was redesigned to be as symmetrical as possible. The three legs were replaced by a single piece cylinder sandwiched by two plates. One plate attaches the cylinder to the piston and the other plate attaches the cylinder to the flange. The new mount can be seen in \Cref{fig:cad mount 2}. The new plug design has a dovetail groove to hold an o-ring, which will provide a better seal than the metal only plug, especially at low pressures. The o-ring will also maintain sealing capability after more cycles than just metal. \Cref{fig:plug v2 draw} shows a drawing of the new plug design.
 
 \begin{figure}[tb]
+    \vspace{16pt}
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
@@ -118,14 +136,18 @@ The piston mount was redesigned to be as symmetrical as possible. The three legs
     
     \caption{Redesigned piston valve mount and plug.}
     \label{fig:redesign}
+    \vspace{16pt}
 \end{figure}
+
+The piston mount was redesigned to be as symmetrical as possible. The three legs were replaced by a single piece cylinder sandwiched by two plates. One plate attaches the cylinder to the piston and the other plate attaches the cylinder to the flange. The new mount can be seen in \Cref{fig:cad mount 2}. The new plug design has a dovetail groove to hold an o-ring, which will provide a better seal than the metal only plug, especially at low pressures. The o-ring will also maintain sealing capability after more cycles than just metal. \Cref{fig:plug v2 draw} shows a drawing of the new plug design.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Improved Piston Valve Design}
 % subsection about new piston compared to rupture disk
 %\subsection{Improved Piston Valve Compared to Rupture Disk} \label{ss:new piston v disk}
-Since a new piston mount and plug have been designed, the new setup needs to be tested and compared to the rupture disk results to ensure the valve is performing adequately and the desired pressure of \SI{1.72}{\mega\pascal} (250 psi) in less than \SI{5}{\milli\second} is still reached. \Cref{fig:disk new} shows a rupture disk and a piston valve test both starting at \SI{6.9}{\mega\pascal} (1000 psi), with a \SI{2.54}{\centi\meter} (1 inch) inner diameter intermediate section. The pressure evolution of the piston valve follows very closely to the rupture disk and the desired pressurization is reached. \Cref{fig:piston 1000psi 25ms} shows a piston valve test under the same conditions, but has more instrumentation included. Comparing this plot to \Cref{fig:disk} shows that the piston valve produces pressure and density waves very similar to those of the rupture disk. Therefore, the repeatability of the improved piston mount and plug can be tested. 
 
 \begin{figure}[tb]
     \vspace{16pt}
@@ -149,13 +171,16 @@ Since a new piston mount and plug have been designed, the new setup needs to be 
     \vspace{16pt}
 \end{figure}
 
+Since a new piston mount and plug have been designed, the new setup needs to be tested and compared to the rupture disk results to ensure the valve is performing adequately and the desired pressure of \SI{1.72}{\mega\pascal} (250 psi) in less than \SI{5}{\milli\second} is still reached. \Cref{fig:disk new} shows a rupture disk and a piston valve test both starting at \SI{6.9}{\mega\pascal} (1000 psi), with a \SI{2.54}{\centi\meter} (1 inch) inner diameter intermediate section. The pressure evolution of the piston valve follows very closely to the rupture disk and the desired pressurization is reached. \Cref{fig:piston 1000psi 25ms} shows a piston valve test under the same conditions, but has more instrumentation included. Comparing this plot to \Cref{fig:disk} shows that the piston valve produces pressure and density waves very similar to those of the rupture disk. Therefore, the repeatability of the improved piston mount and plug can be tested. 
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % subsection about new piston valve repeatability
 %\subsection{Improved Piston Valve Repeatability} \label{ss:new repeatability}
-The repeatability is tested in the same manner as the first piston valve design. The piston valve is tested at the same initial pressure to determine the repeatability and consistency, then the valve is tested at varying initial pressures to provide data to predict the valve's operation and pressure evolution over a range of pressures. \Cref{fig:new piston 2 test} shows two tests at an initial pressure of \SI{6.9}{\mega\pascal} (1000 psi). The two tests overlap each other well and demonstrate the piston valve can produce the same pressurization in the HENRI cartridge for multiple tests. \Cref{fig:new norm} presents tests over a range of initial pressures, normalized by the initial pressure. The highest three initial pressures provide very similar results, that also match well with the rupture disk tests. However, \SI{2.5}{\mega\pascal} (360 psi) and lower deviate and pressurize slower, with less oscillation. The behavior of the valve and HENRI cartridge at low initial pressure is useful to know so TREAT has more flexibility in transient capability. The improved piston valve design also can seal at much lower pressures than the metal only plug design, which further increases the capability of the system.
 
-\begin{figure}[tb]
+\begin{figure}[bt]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
@@ -174,74 +199,11 @@ The repeatability is tested in the same manner as the first piston valve design.
     \label{fig:new piston repeatability}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% subsection about new piston valve reusability
-%\subsection{Improved Piston Valve Re-usability} \label{ss:new reusability}
-
-% subsection comparing metal-to-metal seal and o-ring plugs
-% \subsection{Metal-to-Metal Plug Compared to O-ring Plug}
-% The metal-to-metal plug design did not seal as well as the o-ring design, which led to a leak from the driver tank into the test section before the piston valve opened all the way. The o-ring plug does not have this issue, even at low operating pressures (below \SI{1.72}{\mega\pascal} (\SI{250}{psi})). \Cref{fig:metal vs oring} shows a test using each plug type. The pressure at [INSERT CORRECT POSITION HERE (probably TS1)] for the metal-to-metal seal increases slightly before the other positions, and before the driver tank pressure decreases significantly, showing that with only the pressure of the driver tank holding it closed, the metal-to-metal seal does not work well. In contrast, the o-ring plug is able to maintain the pressure boundary until the valve opens fully, which provides a quick, crisp helium injection.
-
-% \begin{figure}
-%     \vspace{16pt}
-%     \centering
-%     %\includegraphics{}
-%     \caption{Results of tests with an initial pressure of [PRESSURE] for the metal-to-metal plug and the o-ring plug.}
-%     \label{fig:metal vs oring}
-%     \vspace{16pt}
-% \end{figure}
-
-
-
-% \begin{figure}[htbp]
-%     \vspace{16pt}
-%     \centering
-%     \begin{subfigure}{0.32\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{results/plots/270psi_MPa_25.png}
-%         \caption{\SI{1724}{\kilo\pascal} (\SI{250}{psi})}
-%         \label{fig:piston multi 250}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}{0.32\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{results/plots/500psi_Mpa_25.png}
-%         \caption{\SI{3448}{\kilo\pascal} (\SI{500}{psi})}
-%         \label{fig:piston multi 500}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}{0.32\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{results/plots/1000psi_Mpa_25.png}
-%         \caption{\SI{6896}{\kilo\pascal} (\SI{1000}{psi})}
-%         \label{fig:piston multi 1000}
-%     \end{subfigure}
-%     %\vspace{8pt}
-%     % \begin{subfigure}{0.24\textwidth}
-%     %     \centering
-%     %     \includegraphics[width=\textwidth]{results/plots/750psi_Mpa_25.png}
-%     %     \caption{\SI{5172}{\kilo\pascal} (\SI{750}{psi})}
-%     %     \label{fig:piston multi 750}
-%     % \end{subfigure}
-%     % \hfill
-    
-
-%     \caption{Pressure evolution for HENRI tests beginning at pressures ranging from \SI{1724}{\kilo\pascal} (\SI{250}{psi}) to \SI{6896}{\kilo\pascal} (\SI{1000}{psi}).}
-%     \label{fig:piston multi}
-%     \vspace{16pt}
-% \end{figure}
+The repeatability is tested in the same manner as the first piston valve design. The piston valve is tested at the same initial pressure to determine the repeatability and consistency, then the valve is tested at varying initial pressures to provide data to predict the valve's operation and pressure evolution over a range of pressures. \Cref{fig:new piston 2 test} shows two tests at an initial pressure of \SI{6.9}{\mega\pascal} (1000 psi). The two tests overlap each other well and demonstrate the piston valve can produce the same pressurization in the HENRI cartridge for multiple tests. \Cref{fig:new norm} presents tests over a range of initial pressures, normalized by the initial pressure. The highest three initial pressures provide very similar results, that also match well with the rupture disk tests. However, \SI{2.5}{\mega\pascal} (360 psi) and lower deviate and pressurize slower, with less oscillation. The behavior of the valve and HENRI cartridge at low initial pressure is useful to know so TREAT has more flexibility in transient capability. The improved piston valve design also can seal at much lower pressures than the metal only plug design, which further increases the capability of the system.
 
 
 
 
-% \begin{figure}[htbp]
-%     \vspace{16pt}
-%     \centering
-%     \includegraphics[width=\textwidth]{results/plots/normalized_FFKM.png}
-%     \caption{Pressure evolution for four normalized tests at a selection of senors along the HENRI test section.}
-%     \label{fig:piston rel}
-%     \vspace{16pt}
-% \end{figure}
 
 
 

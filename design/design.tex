@@ -4,7 +4,14 @@
 % A valve for use in HENRI must be: fast-opening (less than \SI{5}{\milli\second}), predictable, reliable, reusable, fit in the physical confines of the HENRI system, and not contaminate or disrupt the helium-3. 
 % To meet these requirements, a pneumatic piston valve was designed and a prototype was built at OSU. The valve uses helium as its working fluid, to press a metal plug against a machined flange surface to seal the high pressure driver tank from the evacuated test section. The piston is mounted to the flange and is fed helium via an external manifold that is connected through the flange using tube fittings. The plug is held closed by the piston pressure in one chamber (the bottom chamber in this set-up), as well as the pressure in the driver tank. When the piston is desired to be opened, the helium is vented from the bottom chamber, then the top chamber is pressurized rapidly to actuate the piston and remove the plug from the exit of the driver tank. Using the helium of the HENRI system as the working gas for the piston provides some advantages: firstly, using only helium in the system reduces the chances of contamination, which is vitally important for a system that will be full of rare helium-3 gas, both for neutronics and for economics, and secondly, using high pressure gas allows for rapid actuation of the piston, which will compensate for the slower actuation when compared to the rupture disk.
 
-To meet the requirements outlined above, a hydraulic pneumatic piston valve was designed, built, and tested at OSU. The valve utilizes the helium from the high pressure driver tank in HENRI as its working fluid, which decreases the chances of contamination compared to using another working fluid, as well as keeping the required external attachments to a minimum to improve the modularity of the HENRI cartridge. The piston can fit inside the driver tank and attaches to the driver tank's flange. The flange is machined to accept a machined plug that attaches to the piston to create a tight seal. The valve can open rapidly by using the pressure of the helium in the driver tank and fully pulls away from the flange to provide obstruction-free flow into the test section. \Cref{fig:cad gen 1} shows CAD models of the piston valve, both a concept model and an as-built model. \Cref{fig:cad concept} shows the concept of the valve and how it attaches to the driver tank flange to sit inside the HENRI cartridge and \Cref{fig:cad lip} shows the as-built piston mount and flange. The sealing surface has a lip machined into it that helps the metal plug to seal against the surface of the flange.
+To meet the requirements outlined above, a hydraulic pneumatic piston valve was designed, built, and tested at OSU.
+The valve utilizes the helium from the high pressure driver tank in HENRI as its working fluid, which decreases the chances of contamination compared to using another working fluid, as well as keeping the required external attachments to a minimum to improve the modularity of the HENRI cartridge.
+The piston can fit inside the driver tank and attaches to the driver tank's flange.
+The flange is machined to accept a machined plug that attaches to the piston to create a tight seal.
+The valve can open rapidly by using the pressure of the helium in the driver tank and fully pulls away from the flange to provide obstruction-free flow into the test section.
+\Cref{fig:cad gen 1} shows CAD models of the piston valve, both a concept model and an as-built model.
+\Cref{fig:cad concept} shows the concept of the valve and how it attaches to the driver tank flange to sit inside the HENRI cartridge and \Cref{fig:cad lip} shows the as-built piston mount and flange.
+The sealing surface has a lip machined into it that helps the metal plug to seal against the surface of the flange.
 
 % obviously put a drawing and/or picture here of the og design -- also include a picture of the whole HENRI assembly with labels, so this all makes sense
 \begin{figure}[tb]
@@ -12,15 +19,15 @@ To meet the requirements outlined above, a hydraulic pneumatic piston valve was 
     \centering
     \begin{subfigure}[t]{0.6\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{design/photos/PistonValve_Gen1_CAD_labels.PNG}
+        \includegraphics[width=0.8\textwidth]{design/photos/PistonValve_Gen1_CAD_labels.PNG}
         \caption{CAD model of a piston valve concept attached to driver tank flange.}
         \label{fig:cad concept}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.35\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{design/photos/PistonMount_CAD_lip.PNG}
-        \caption{As-built CAD model of piston valve mount and driver tank flange, with sealing lip highlighted.}
+        \includegraphics[width=0.8\textwidth]{design/photos/PistonMount_CAD_lip.PNG}
+        \caption{As-built CAD model of first piston valve mount and driver tank flange, with sealing lip highlighted.}
         \label{fig:cad lip}
     \end{subfigure}
     \caption{CAD models of the piston valve with important features highlighted.}
@@ -32,25 +39,19 @@ To meet the requirements outlined above, a hydraulic pneumatic piston valve was 
 
 % The first plug design was made with various materials, including aluminum, stainless steel, and a cobalt alloy, seen in \Cref{fig:metal plugs}. This plug is a simple design with a \SI{45}{\degree} cone that directly contacts the matching machined surface of the flange. A special coating was also tried on an aluminum plug[DO WE HAVE THE COATING INFO?] to improve the sealing ability of the plug on the flange. The initial mount design for the piston was made of a plate mounted to the piston body and three legs holding the plate onto the flange. The three-legged design allowed for easy routing of tubing for operating the piston, but also allowed for some movement of the mount when the piston was fully extended. This movement caused asymmetric wear on the plug, as seen in \Cref{fig:metal plugs}, leading to failure of the seal. Potentially due to this wear, the slow flow through the manifold, or the nature of metal-to-metal seals, a slight leak was observed from the driver tank into the test section before the piston valve opened fully [REF to plot here?].
 
-
-
-
-
-The plug is machined with a slope of \SI{45}{\degree} to allow for maximum flow through the valve opening. The sealing surface of the flange is machined to match this slope, so when the piston presses the plug into the flange, the whole plug surface can be used to seal. \Cref{fig:plug} shows the drawing for the plug, as well as a plug as-built for the piston valve. The dimensions were chosen to enable the plug to attach to the piston, seal on the flange, and to seal against the flange with just the pressure in the driver tank pressing against the bottom surface. Sealing with only the pressure in the driver tank allows for the the piston chambers to be empty before the valve opens, which reduces resistance for the piston's movement. The top and bottom chamber can be seen in \Cref{fig:piston valve}, which shows the piston valve installed on its mount on the flange. The mount uses three (3) legs to hold the piston onto the flange, which allows for tubing to go from the connections on the flange to the connections on the piston.
-
-\begin{figure}[tb]
+\begin{figure}[bt]
     \vspace{16pt}
     \centering
     \begin{subfigure}[t]{0.6\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{design/photos/plug_gen1_drawing.PNG}
+        \includegraphics[width=0.7\textwidth]{design/photos/plug_gen1_drawing.PNG}
         \caption{Drawing of plug for piston valve. Measurements are in inches.}
         \label{fig:plug draw}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.35\textwidth}
         \centering
-        \includegraphics[width=0.75\textwidth]{design/photos/cobalt_plug.png}
+        \includegraphics[width=0.58\textwidth]{design/photos/cobalt_plug.png}
         \caption{As built plug for piston valve.}
         \label{fig:cobalt plug}
     \end{subfigure}
@@ -59,6 +60,12 @@ The plug is machined with a slope of \SI{45}{\degree} to allow for maximum flow 
     \label{fig:plug}
     \vspace{16pt}
 \end{figure}
+
+
+
+The plug is machined with a slope of \SI{45}{\degree} to allow for maximum flow through the valve opening. The sealing surface of the flange is machined to match this slope, and when the piston presses the plug into the flange, the plug seals into the lip machined into the flange. \Cref{fig:plug} shows the drawing for the plug, as well as a plug as-built for the piston valve. To function properly, the plug must be designed such that the force from the pressure in the driver tank a) does not overwhelm the piston opening force and b) is able to hold the plug sealed without additional pressure in the piston. Sealing with only the pressure in the driver tank allows for the the piston chambers to be empty before the valve opens, which reduces resistance for the piston's movement and therefore maximizes the piston valve opening speed. The top and bottom chamber can be seen in \Cref{fig:piston valve}, which shows the piston valve installed on its mount on the flange. The mount uses three (3) legs to hold the piston onto the flange, which allows for tubing to go from the connections on the flange to the connections on the piston.
+
+
 
 % discuss metal-to-metal seal problems at low pressure -- dont discuss this here?
 % An additional requirement for the HENRI system from the TREAT team is that the valve can operate at low pressures in the driver tank, to broaden the range of experiments for which TREAT can use HENRI. The valve design uses both the pressure in the driver tank and the pressure in the piston to hold the plug closed, but if the pressure in either is low enough, there may not be enough sealing force to keep the helium from leaking. It was found with the metal-to-metal seal that it was difficult to keep the seal with a driver tank pressure less than \SI{500}{psia}[NEED TO CHECK, maybe add figure here, or ref results]. Low pressure sealing was difficult for this design, even with fresh plugs that had not been worn by the metal-to-metal contact.

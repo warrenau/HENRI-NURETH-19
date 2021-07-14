@@ -1,10 +1,9 @@
 \section{Fast-Opening Valve Design} \label{s:design}
 % talk about design requirements
 % discuss the initial piston valve design -- what was it, how well did it work, why did it not work
-% A valve for use in HENRI must be: fast-opening (less than \SI{5}{\milli\second}), predictable, reliable, reusable, fit in the physical confines of the HENRI system, and not contaminate or disrupt the helium-3. 
-% To meet these requirements, a pneumatic piston valve was designed and a prototype was built at OSU. The valve uses helium as its working fluid, to press a metal plug against a machined flange surface to seal the high pressure driver tank from the evacuated test section. The piston is mounted to the flange and is fed helium via an external manifold that is connected through the flange using tube fittings. The plug is held closed by the piston pressure in one chamber (the bottom chamber in this set-up), as well as the pressure in the driver tank. When the piston is desired to be opened, the helium is vented from the bottom chamber, then the top chamber is pressurized rapidly to actuate the piston and remove the plug from the exit of the driver tank. Using the helium of the HENRI system as the working gas for the piston provides some advantages: firstly, using only helium in the system reduces the chances of contamination, which is vitally important for a system that will be full of rare helium-3 gas, both for neutronics and for economics, and secondly, using high pressure gas allows for rapid actuation of the piston, which will compensate for the slower actuation when compared to the rupture disk.
 
-To meet the requirements outlined above, a hydraulic pneumatic piston valve was designed, built, and tested at OSU.
+
+To meet the requirements outlined above, a piston actuated valve was designed, built, and tested at OSU.
 The valve utilizes the helium from the high pressure driver tank in HENRI as its working fluid, which decreases the chances of contamination compared to using another working fluid, as well as keeping the required external attachments to a minimum to improve the modularity of the HENRI cartridge.
 The piston can fit inside the driver tank and attaches to the driver tank's flange.
 The flange is machined to accept a machined plug that attaches to the piston to create a tight seal.
@@ -14,7 +13,7 @@ The valve can open rapidly by using the pressure of the helium in the driver tan
 The sealing surface has a lip machined into it that helps the metal plug to seal against the surface of the flange.
 
 % obviously put a drawing and/or picture here of the og design -- also include a picture of the whole HENRI assembly with labels, so this all makes sense
-\begin{figure}[tb]
+\begin{figure}[b!]
     \vspace{16pt}
     \centering
     \begin{subfigure}[t]{0.6\textwidth}
@@ -52,7 +51,7 @@ The sealing surface has a lip machined into it that helps the metal plug to seal
     \begin{subfigure}[t]{0.35\textwidth}
         \centering
         \includegraphics[width=0.58\textwidth]{design/photos/cobalt_plug.png}
-        \caption{As built plug for piston valve.}
+        \caption{As-built plug for piston valve.}
         \label{fig:cobalt plug}
     \end{subfigure}
     %
@@ -63,81 +62,12 @@ The sealing surface has a lip machined into it that helps the metal plug to seal
 
 
 
-The plug is machined with a slope of \SI{45}{\degree} to allow for maximum flow through the valve opening. The sealing surface of the flange is machined to match this slope, and when the piston presses the plug into the flange, the plug seals into the lip machined into the flange. \Cref{fig:plug} shows the drawing for the plug, as well as a plug as-built for the piston valve. To function properly, the plug must be designed such that the force from the pressure in the driver tank a) does not overwhelm the piston opening force and b) is able to hold the plug sealed without additional pressure in the piston. Sealing with only the pressure in the driver tank allows for the the piston chambers to be empty before the valve opens, which reduces resistance for the piston's movement and therefore maximizes the piston valve opening speed. The top and bottom chamber can be seen in \Cref{fig:piston valve}, which shows the piston valve installed on its mount on the flange. The mount uses three (3) legs to hold the piston onto the flange, which allows for tubing to go from the connections on the flange to the connections on the piston.
+The plug is machined with a slope of \SI{45}{\degree} to allow for maximum flow through the valve opening. The sealing surface of the flange is machined to match this slope, and when the piston presses the plug into the flange, the plug seals into the lip machined into the flange. \Cref{fig:plug} shows the drawing for the plug, as well as a plug as-built for the piston valve. To function properly, the plug must be designed such that the force from the pressure in the driver tank a) does not overwhelm the piston opening force and b) is able to hold the plug sealed without additional pressure in the piston. Sealing with only the pressure in the driver tank allows for the the piston chambers to be empty before the valve opens, which reduces resistance for the piston's movement and therefore maximizes the piston valve opening speed. The top and bottom chamber can be seen in \Cref{fig:piston valve}, which shows the piston valve installed on its mount on the flange. The first piston valve design mount uses three (3) legs to hold the piston onto the flange, which allows for tubing to go from the connections on the flange to the connections on the piston.
 
 
 
-% discuss metal-to-metal seal problems at low pressure -- dont discuss this here?
-% An additional requirement for the HENRI system from the TREAT team is that the valve can operate at low pressures in the driver tank, to broaden the range of experiments for which TREAT can use HENRI. The valve design uses both the pressure in the driver tank and the pressure in the piston to hold the plug closed, but if the pressure in either is low enough, there may not be enough sealing force to keep the helium from leaking. It was found with the metal-to-metal seal that it was difficult to keep the seal with a driver tank pressure less than \SI{500}{psia}[NEED TO CHECK, maybe add figure here, or ref results]. Low pressure sealing was difficult for this design, even with fresh plugs that had not been worn by the metal-to-metal contact.
+
 
 % discuss design improvements in second iteration in both the mount and the o-ring
 % \subsection{Design Iteration} \label{s:iteration}
 % While the first plug and mount design proved the concept of a piston valve will work for the HENRI system, the seal durability was low and the piston opening was not as smooth or as fast as desired. To improve the valve, a new plug was designed using an o-ring to improve the sealing ability, and a new mount was designed to provide a more uniform and sturdy hold on the piston. The new assembly can be seen in \Cref{fig:piston assembly}. The new plug still uses a \SI{45}{\degree} slope to mate to the existing flange, but it does not go to a point like the previous design. It has a dovetail groove machined into it, as seen in \Cref{fig:Dovetail Groove}, to hold the o-ring in place such that the o-ring presses into the machined surface of the flange to strongly seal the driver tank from the test section. Two types of o-ring materials have been tested: an FFKM o-ring manufactured by Marko Rubber and a nitrile o-ring manufactured by Parker. The new mount was designed to work with the existing flange, so it uses the same bolt holes and needs to align the piston with the same sealing surface. The mount is comprised of three aluminum pieces: a circular plate mounted to the bottom of the piston, a circular plate to hold the mount on the flange, and a cylindrical support holding the two plates together and keeping the piston at the correct distance from the sealing surface. The cylindrical support has slots machined into it to allow for gas flow, tube fitting connections on the piston, and access to the bolts that mount the assembly to the flange.
-
-% maybe include a table with serial numbers for o-rings?
-
-% need images / diagrams of 2nd gen plug and mount system
-%
-% \begin{figure}[htbp]
-%     \vspace{16pt}
-%     \centering
-%     \includegraphics[height=2.625in, width=3.5in,angle=270]{experiment/photos/Piston_Assembly.jpg} % for some reason, overleaf rotates this and it looks correct in overleaf, but it is not in a downloaded pdf -- this needs to be rotated to be correct in pdf -- you can look at it by downloading the pdf or changing the viewer to 'native' in the menu, instead of 'built-in'
-%     \caption{Piston assembled with second generation mount on flange.}
-%     \label{fig:piston assembly}
-%     \vspace{16pt}
-% \end{figure}
-%
-
-
-% dovetail
-
-% \begin{figure}[htbp]
-%     \vspace{16pt}
-%     \centering
-%     \includegraphics[width=4.032in]{design/photos/dovetail.JPG}
-%     \caption{Cutaway view of the second generation plug, with dovetail groove for o-ring. Measurements are in inches.}
-%     \label{fig:Dovetail Groove}
-%     \vspace{16pt}
-% \end{figure}
-
-
-
-
-% discuss future design improvements that have not yet been implemented -- new driver tank, proposed improvements to flange / piston pressure lines, etc.
-% \subsection{Future Improvements} \label{s:improvements}
-% Going forward, there is still work to be completed in the design process. Firstly, the HENRI prototype will need to be fitted with a driver tank that is more representative of the final HENRI system. This driver tank has been designed and fabricated, however the flange has not been machined to accept the piston valve. Also, the o-ring durability must continue to be tested, as o-rings have broken during testing at OSU. The exact cause of the o-ring failure has yet to be determined, but a testing campaign is underway to investigate the problem further.
-
-% o-ring failure pics -- do we want these here? they take up a lot of space and we might not want to talk too much about the o-ring failures. Maybe just have one of the two figs?
-
-% \begin{figure}[htbp]
-%     \vspace{16pt}
-%     \centering
-%     \includegraphics[width=4.032in, height=3.024in]{design/photos/Piston_Broken_Oring.jpg}
-%     \caption{Broken o-ring (FFKM) in piston assembly.}
-%     \label{fig:broken oring piston}
-%     \vspace{16pt}
-% \end{figure}
-
-    
-
-% \begin{figure}[htpb]
-%     \vspace{16pt}
-%     \centering
-%     \begin{subfigure}[t]{0.45\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{design/photos/Broken_Oring_Comparison.jpg}
-%         \caption{Comparison of broken o-ring (Nitrile) and new o-ring (FFKM).}
-%         \label{fig:broken oring comp}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}[t]{0.45\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{design/photos/Oring_Dust_Plug.jpg}
-%         \caption{Rubber dust from broken o-ring (Nitrile) on the top of the plug.}
-%         \label{fig:broken oring dust}
-%     \end{subfigure}
-%     \caption{Images of the aftermath of an o-ring failing during a 1000 psia test.}
-%     \label{fig:broken oring 2}
-%     \vspace{16pt}
-% \end{figure}
-% %
